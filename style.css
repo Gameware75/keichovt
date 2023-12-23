@@ -73,36 +73,16 @@ body {
 
 @media (hover: hover) {
     .link:hover {
-        background-color: var(--accentColor);
+        background-color: var(--bgColor);
         color: var(--bgColor);
     }
 }
 
 .link:active {
-    background-color: var(--accentColor);
+    background-color: var(--bgColor);
     color: var(--bgColor);
 }
 
-#hashtag {
-    position: relative;
-    padding-bottom: 20px;
-    color: var(--accentColor);
-    font-size: 1rem;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-
-    /*  animation   */
-    overflow: hidden;
-    background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear var(--delay) infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
 
 
 /*-------------------------animations-----------------------*/
@@ -173,15 +153,7 @@ body {
     transition: .5s ease-in-out;
 }
 
-.popup-quote {
-    font-family : Baskerville, Georgia, serif;
-    font-style : italic;
-    position: flex;
-    color: var(--accentColor);
-    padding: 20px;
-    text-align: center;
-    font-size: 1rem;
-}
+
 
 .popup-photo {
     display: flex;
