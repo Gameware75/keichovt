@@ -74,13 +74,14 @@ body {
 @media (hover: hover) {
     .link:hover {
         background-color: var(--bgColor);
-        color: var(--bgColor);
+        color: var(--accentColor);
     }
 }
 
 .link:active {
     background-color: var(--bgColor);
-    color: var(--bgColor);
+    color: var(--accentColor);
+   
 }
 
 
