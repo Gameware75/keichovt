@@ -100,5 +100,27 @@
         artworkImg.src = 'https://cdn.discordapp.com/attachments/1156982835262009426/1193420384071057428/1882793-4_1.png';
     });
 </script>
+
+<script>
+    // Funktion, um den Twitch-Button zu markieren, wenn der Livestatus "True" ist
+    function markTwitchLive() {
+        const twitchButton = document.querySelector('.link[href="Twitch"]');
+        twitchButton.style.border = '2px solid red';
+    }
+
+    // AJAX-Anfrage an die Twitch-Status-API
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            const response = JSON.parse(this.responseText);
+            if (response.message === 'True') {
+                markTwitchLive();
+            }
+        }
+    };
+    xhttp.open('GET', 'https://service.keicho.de/api/twitch/livestatus', true);
+    xhttp.send();
+</script>
+
 <script src="https://keicho.statuspage.io/embed/script.js"></script>
 </html>
