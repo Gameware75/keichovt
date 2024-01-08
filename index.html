@@ -82,10 +82,23 @@
     </a>
 
     <div id="artwork">
-        <img src="https://cdn.discordapp.com/attachments/1156982835262009426/1193420384071057428/1882793-4_1.png?ex=65aca658&is=659a3158&hm=0381e25d9c4d2c33ba1dd527ef7a2d576d553712728f5103006a49f11d98f657&" alt="Artwork">
+        <img src="https://cdn.discordapp.com/attachments/1156982835262009426/1193420384071057428/1882793-4_1.png" alt="Artwork">
     </div>
     <p style="text-align: center; font-size: 20px; color: white"><a  style="text-align: center; font-size: 20px; color: white" href="Twitter">Streamplan findet ihr auf mein Discord oder Twitter <3></a></p>
 
 </div>
 </body>
+<script>
+    const artwork = document.getElementById('artwork');
+    const artworkImg = artwork.querySelector('img');
+
+    artwork.addEventListener('mouseover', function() {
+        artworkImg.src = 'https://cdn.discordapp.com/attachments/1156982835262009426/1193420385044148255/1882793-5.png';
+    });
+
+    artwork.addEventListener('mouseout', function() {
+        artworkImg.src = 'https://cdn.discordapp.com/attachments/1156982835262009426/1193420384071057428/1882793-4_1.png';
+    });
+</script>
+
 </html>
